@@ -16,24 +16,19 @@ class Solution {
 
     // Complete the sockMerchant function below.
     static int sockMerchant(int n, int[] ar) {
-        int pair = 0;
-        int pos = 0;
-        int val = -1;
-        List<int> pairs = new List<int>();
+        int pairs = 0;
+        HashSet<int> colors = new HashSet<int>();
 
         for(int i = 0; i < n; i++){
-            val = ar[i];
-            pos = pairs.IndexOf(val);
-            if(pos != -1){
-                pair++;
-                pairs.RemoveAt(pos);
+            if(colors.Contains(ar[i])){
+                pairs++;
+                colors.Remove(ar[i]);
             }
-            else {
-                pairs.Add(val);
-            }
+            else
+                colors.Add(ar[i]);            
         }
 
-        return pair;
+        return pairs;
     }
 
     static void Main(string[] args) {
