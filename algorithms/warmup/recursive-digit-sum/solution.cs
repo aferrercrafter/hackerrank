@@ -11,19 +11,16 @@ class Solution {
     // Complete the superDigit function below.
     static int superDigit(string n, int k) {
         if(n.Length == 1)
-            return int.Parse(n);    
+            return int.Parse(n);
+
         int sum = 0;
-        int z = 0;
-        for(int i = 0; i < n.Length * k; i++){
-            if (z == n.Length)
-                z = 0;
-            sum += (int)char.GetNumericValue(n[z]);
-            z++;
-        }
+        for(int i = 0; i < n.Length; i++)
+            sum += (int)(n[i] - '0');
 
-        string dig = sum.ToString();
-
-        return superDigit(dig, 1);
+        if(sum > 10)
+            return superDigit(sum.ToString(), k);
+        else
+            return superDigit((sum * k).ToString(), 1);
     }
 
     static void Main(string[] args) {
