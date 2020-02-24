@@ -12,8 +12,8 @@
 *   [Or Pascal Triangle Structure](https://github.com/aferrercrafter/hackerrank/tree/master/codility/training/or-pascal-triangle-structure)
 *   [Counting Valleys](https://github.com/aferrercrafter/hackerrank/tree/master/interview_preparation_kit/warm_up/counting_valleys)
 *   [Jumping On The Clouds](https://github.com/aferrercrafter/hackerrank/tree/master/interview_preparation_kit/warm_up/jumping_on_the_clouds)
-*   [Repeated String](https://github.com/aferrercrafter/hackerrank/tree/master/interview_preparation_kit/warm_up/repeatedString)
-*   [Sock Merchant]()
+*   [Repeated String](https://github.com/aferrercrafter/hackerrank/tree/master/interview_preparation_kit/warm_up/repeated_string)
+*   [Sock Merchant](https://github.com/aferrercrafter/hackerrank/tree/master/interview_preparation_kit/warm_up/sock_merchant)
 
 ### SQL Problems
     
