@@ -20,21 +20,12 @@ namespace codility.frog_river_one
             if (X > A.Length)
                 return -1;
 
-            long sum = (X * (X + 1L) / 2L);
-            long sumT;
-
             for (int i = 0; i < A.Length; i++)
             {
                 if (!posCount.Contains(A[i]))
                     posCount.Add(A[i]);
 
-                sumT = 0;
-                foreach(var kv in posCount)
-                {
-                    sumT += kv;
-                }
-
-                if (sumT == sum)
+                if (posCount.Count == X)
                     return i;
             }
 
