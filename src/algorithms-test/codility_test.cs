@@ -2,6 +2,7 @@ using codility;
 using codility.array_rotation;
 using codility.frog_jump;
 using codility.frog_river_one;
+using codility.max_counters;
 using codility.perm_missing_element;
 using codility.tape_equilibrium;
 using codility.unpaired_elements;
@@ -18,6 +19,7 @@ namespace algorithms_test
         private PermMissingElement _permMissingElement;
         private TapeEquilibrium _tapeEquilibrium;
         private FrogRiverOne _frogRiverOne;
+        private MaxCounters _maxCounters;
 
         [SetUp]
         public void Setup()
@@ -29,6 +31,7 @@ namespace algorithms_test
             _permMissingElement = new PermMissingElement();
             _tapeEquilibrium = new TapeEquilibrium();
             _frogRiverOne = new FrogRiverOne();
+            _maxCounters = new MaxCounters();
         }
 
         [Test]
@@ -105,6 +108,13 @@ namespace algorithms_test
 
             s = _frogRiverOne.Solution(5, new int[] { 1, 1, 1, 2, 2, 3, 4, 4 });
             Assert.AreEqual(-1, s);
+        }
+
+        [Test]
+        public void TestMaxCounters()
+        {
+            int[] s = _maxCounters.Solution(5, new int[] {3, 4, 4, 6, 1, 4, 4 });
+            Assert.That(new int[] { 3, 2, 2, 4, 2 }, Is.EqualTo(s));
         }
     }
 }
