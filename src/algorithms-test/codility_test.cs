@@ -1,6 +1,7 @@
 using codility;
 using codility.array_rotation;
 using codility.frog_jump;
+using codility.perm_missing_element;
 using codility.unpaired_elements;
 using NUnit.Framework;
 
@@ -12,6 +13,7 @@ namespace algorithms_test
         private ArrayRotation _arrayRotation;
         private UnpairedElements _unpairedElements;
         private FrogJump _frogJump;
+        private PermMissingElement _permMissingElement;
 
         [SetUp]
         public void Setup()
@@ -20,6 +22,7 @@ namespace algorithms_test
             _arrayRotation = new ArrayRotation();
             _unpairedElements = new UnpairedElements();
             _frogJump = new FrogJump();
+            _permMissingElement = new PermMissingElement();
         }
 
         [Test]
@@ -63,6 +66,13 @@ namespace algorithms_test
         {
             int s = _frogJump.Solution(10, 85, 30);
             Assert.AreEqual(3, s);
+        }
+
+        [Test]
+        public void TestPermMissingElement()
+        {
+            int s = _permMissingElement.Solution(new int[] { 2, 3, 1, 5 });
+            Assert.AreEqual(4, s);
         }
     }
 }
