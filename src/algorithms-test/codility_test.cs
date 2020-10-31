@@ -2,6 +2,7 @@ using codility;
 using codility.array_rotation;
 using codility.frog_jump;
 using codility.perm_missing_element;
+using codility.tape_equilibrium;
 using codility.unpaired_elements;
 using NUnit.Framework;
 
@@ -14,6 +15,7 @@ namespace algorithms_test
         private UnpairedElements _unpairedElements;
         private FrogJump _frogJump;
         private PermMissingElement _permMissingElement;
+        private TapeEquilibrium _tapeEquilibrium;
 
         [SetUp]
         public void Setup()
@@ -23,6 +25,7 @@ namespace algorithms_test
             _unpairedElements = new UnpairedElements();
             _frogJump = new FrogJump();
             _permMissingElement = new PermMissingElement();
+            _tapeEquilibrium = new TapeEquilibrium();
         }
 
         [Test]
@@ -73,6 +76,22 @@ namespace algorithms_test
         {
             int s = _permMissingElement.Solution(new int[] { 2, 3, 1, 5 });
             Assert.AreEqual(4, s);
+        }
+
+        [Test]
+        public void TestTapeEquilibrium()
+        {
+            int s = _tapeEquilibrium.Solution(new int[] { 3, 1, 2, 4, 3 });
+            Assert.AreEqual(1, s);
+
+            s = _tapeEquilibrium.Solution(new int[] { 3, 10 });
+            Assert.AreEqual(7, s);
+
+            s = _tapeEquilibrium.Solution(new int[] { 0, 1, 2, -5, 2 });
+            Assert.AreEqual(0, s);
+
+            s = _tapeEquilibrium.Solution(new int[] {1, -1 });
+            Assert.AreEqual(2, s);
         }
     }
 }
