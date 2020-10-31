@@ -23,7 +23,7 @@ namespace codility.frog_river_one
             long sum = (X * (X + 1L) / 2L);
             long sumT;
 
-            for (int i = 0; i <= A.Length; i++)
+            for (int i = 0; i < A.Length; i++)
             {
                 if (!posCount.Contains(A[i]))
                     posCount.Add(A[i]);
@@ -36,7 +36,6 @@ namespace codility.frog_river_one
 
                 if (sumT == sum)
                     return i;
-
             }
 
             return -1;

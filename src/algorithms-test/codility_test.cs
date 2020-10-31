@@ -102,6 +102,9 @@ namespace algorithms_test
         {
             int s = _frogRiverOne.Solution(5, new int[] { 1, 3, 1, 4, 2, 3, 5, 4 });
             Assert.AreEqual(6, s);
+
+            s = _frogRiverOne.Solution(5, new int[] { 1, 1, 1, 2, 2, 3, 4, 4 });
+            Assert.AreEqual(-1, s);
         }
     }
 }
