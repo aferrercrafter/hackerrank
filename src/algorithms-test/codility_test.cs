@@ -1,6 +1,7 @@
 using codility;
 using codility.array_rotation;
 using codility.frog_jump;
+using codility.frog_river_one;
 using codility.perm_missing_element;
 using codility.tape_equilibrium;
 using codility.unpaired_elements;
@@ -16,6 +17,7 @@ namespace algorithms_test
         private FrogJump _frogJump;
         private PermMissingElement _permMissingElement;
         private TapeEquilibrium _tapeEquilibrium;
+        private FrogRiverOne _frogRiverOne;
 
         [SetUp]
         public void Setup()
@@ -26,6 +28,7 @@ namespace algorithms_test
             _frogJump = new FrogJump();
             _permMissingElement = new PermMissingElement();
             _tapeEquilibrium = new TapeEquilibrium();
+            _frogRiverOne = new FrogRiverOne();
         }
 
         [Test]
@@ -92,6 +95,13 @@ namespace algorithms_test
 
             s = _tapeEquilibrium.Solution(new int[] {1, -1 });
             Assert.AreEqual(2, s);
+        }
+
+        [Test]
+        public void TestFrogRiverOne()
+        {
+            int s = _frogRiverOne.Solution(5, new int[] { 1, 3, 1, 4, 2, 3, 5, 4 });
+            Assert.AreEqual(6, s);
         }
     }
 }
