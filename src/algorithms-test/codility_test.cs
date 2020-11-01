@@ -50,6 +50,9 @@ namespace algorithms_test
         {
             int s = _unpairedElements.Solution(new int[] { 9, 3, 9, 3, 9 ,7, 9});
             Assert.AreEqual(7, s);
+
+            s = _unpairedElements.Solution(new int[] { 9, 3, 9, 3, 9, 7, 7 });
+            Assert.AreEqual(9, s);
         }
     }
 }
