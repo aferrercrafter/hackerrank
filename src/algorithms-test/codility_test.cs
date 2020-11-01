@@ -1,5 +1,6 @@
 using codility;
 using codility.array_rotation;
+using codility.unpaired_elements;
 using NUnit.Framework;
 
 namespace algorithms_test
@@ -8,12 +9,14 @@ namespace algorithms_test
     {
         private BinaryGap _binaryGap;
         private ArrayRotation _arrayRotation;
+        private UnpairedElements _unpairedElements;
 
         [SetUp]
         public void Setup()
         {
             _binaryGap = new BinaryGap();
             _arrayRotation = new ArrayRotation();
+            _unpairedElements = new UnpairedElements();
         }
 
         [Test]
@@ -40,6 +43,13 @@ namespace algorithms_test
 
             s = _arrayRotation.Solution(new int[] { 1, 2, 3, 4 }, 4);
             Assert.That(new int[] { 1, 2, 3, 4}, Is.EqualTo(s));
+        }
+
+        [Test]
+        public void TestUnpairedElements()
+        {
+            int s = _unpairedElements.Solution(new int[] { 9, 3, 9, 3, 9 ,7, 9});
+            Assert.AreEqual(7, s);
         }
     }
 }

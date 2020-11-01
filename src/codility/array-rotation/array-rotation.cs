@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace codility.array_rotation
+﻿namespace codility.array_rotation
 {
     public class ArrayRotation
     {
