@@ -1,5 +1,6 @@
 using codility;
 using codility.array_rotation;
+using codility.frog_jump;
 using codility.unpaired_elements;
 using NUnit.Framework;
 
@@ -10,6 +11,7 @@ namespace algorithms_test
         private BinaryGap _binaryGap;
         private ArrayRotation _arrayRotation;
         private UnpairedElements _unpairedElements;
+        private FrogJump _frogJump;
 
         [SetUp]
         public void Setup()
@@ -17,6 +19,7 @@ namespace algorithms_test
             _binaryGap = new BinaryGap();
             _arrayRotation = new ArrayRotation();
             _unpairedElements = new UnpairedElements();
+            _frogJump = new FrogJump();
         }
 
         [Test]
@@ -53,6 +56,13 @@ namespace algorithms_test
 
             s = _unpairedElements.Solution(new int[] { 9, 3, 9, 3, 9, 7, 7 });
             Assert.AreEqual(9, s);
+        }
+
+        [Test]
+        public void TestFrogJump()
+        {
+            int s = _frogJump.Solution(10, 85, 30);
+            Assert.AreEqual(3, s);
         }
     }
 }
