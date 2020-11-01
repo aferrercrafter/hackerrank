@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\hackerrank\hackerrank.csproj" />
+    <ProjectReference Include="..\codility\codility.csproj" />
   </ItemGroup>
 
 </Project>

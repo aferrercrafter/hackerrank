@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace hackerrank
+namespace codility
 {
     public class BinaryGap
     {

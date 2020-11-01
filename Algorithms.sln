@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hackerrank", "src\hackerrank\hackerrank.csproj", "{93304A01-62B5-4C40-9B9E-6E7F9B058F77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "codility", "src\codility\codility.csproj", "{93304A01-62B5-4C40-9B9E-6E7F9B058F77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "algorithms-test", "src\algorithms-test\algorithms-test.csproj", "{AC8154D8-0C5D-47D5-9AAC-8E1CB6D9FC30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "algorithms-test", "src\algorithms-test\algorithms-test.csproj", "{AC8154D8-0C5D-47D5-9AAC-8E1CB6D9FC30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

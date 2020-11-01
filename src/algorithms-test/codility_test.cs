@@ -1,4 +1,4 @@
-using hackerrank;
+using codility;
 using NUnit.Framework;
 
 namespace algorithms_test
@@ -20,16 +20,6 @@ namespace algorithms_test
             Assert.AreEqual(5, s);
 
             s = _binaryGap.Solution(15);
-            Assert.AreEqual(0, s);
-
-            s = _binaryGap.Solution(32);
-            Assert.AreEqual(0, s);
-        }
-
-        [Test]
-        public void TestZeroBynary_Gap()
-        { 
-            var s = _binaryGap.Solution(15);
             Assert.AreEqual(0, s);
 
             s = _binaryGap.Solution(32);
