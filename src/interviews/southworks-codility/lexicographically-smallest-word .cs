@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿
 namespace interviews.southworks_codility
 {
     public class LexicographicallySmallestWord

@@ -1,23 +1,13 @@
-An array A consisting of N different integers is given. The array contains integers in the range [1..(N + 1)], which means that exactly one element is missing.
+﻿### Third Task Binary Period
 
-Your goal is to find that missing element.
+A non-empty zero-indexed string S consisting of Q characters is given. The period of this string is the smallest positive integer P such that:
 
-Write a function:
+P ≤ Q / 2 and S[K] = S[K+P] for 0 ≤ K < Q − P.
 
-class Solution { public int solution(int[] A); }
+For example, 7 is the period of “abracadabracadabra”. A positive integer M is the binary period of a positive integer N if M is the period of the binary representation of N.
 
-that, given an array A, returns the value of the missing element.
+For example, 1651 has the binary representation of "110011100111". Hence, its binary period is 5. On the other hand, 102 does not have a binary period, because its binary representation is “1100110” and it does not have a period.
 
-For example, given array A such that:
+Consider above scenarios & write a function in Python which will accept an integer N as the parameter. Given a positive integer N, the function returns the binary period of N or −1 if N does not have a binary period.
 
-  A[0] = 2
-  A[1] = 3
-  A[2] = 1
-  A[3] = 5
-the function should return 4, as it is the missing element.
-
-Write an efficient algorithm for the following assumptions:
-
-N is an integer within the range [0..100,000];
-the elements of A are all distinct;
-each element of array A is an integer within the range [1..(N + 1)].
+The attached code is still incorrect on some inputs (9, 11, 13, 17 etc). The goal is to find and fix the bugs in the implementation. You can modify at most 2 line.
