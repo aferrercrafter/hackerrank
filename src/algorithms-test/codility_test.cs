@@ -6,7 +6,6 @@ using codility.max_counters;
 using codility.missing_integer;
 using codility.perm_missing_element;
 using codility.tape_equilibrium;
-using codility.task1;
 using codility.unpaired_elements;
 using NUnit.Framework;
 
@@ -23,9 +22,6 @@ namespace algorithms_test
         private FrogRiverOne _frogRiverOne;
         private MaxCounters _maxCounters;
         private MissingInteger _missingInteger;
-        private FirstTask _firstTask;
-        private SecondTask _secondTask;
-        private ThirdTask _thirdTask;
 
         [SetUp]
         public void Setup()
@@ -39,9 +35,6 @@ namespace algorithms_test
             _frogRiverOne = new FrogRiverOne();
             _maxCounters = new MaxCounters();
             _missingInteger = new MissingInteger();
-            _firstTask = new FirstTask();
-            _secondTask = new SecondTask();
-            _thirdTask = new ThirdTask();
         }
 
         [Test]
@@ -138,54 +131,6 @@ namespace algorithms_test
 
             s = _missingInteger.Solution(new int[] { -1, -3});
             Assert.AreEqual(1, s);
-        }
-
-        [Test]
-        public void TestInterviewFirstTask()
-        {
-            string s = _firstTask.Solution("Wed", 2);
-            Assert.AreEqual("Fri", s);
-
-            s = _firstTask.Solution("Sat", 23);
-            Assert.AreEqual("Mon", s);
-
-            s = _firstTask.Solution("Sat", 0);
-            Assert.AreEqual("Sat", s);
-        }
-
-        [Test]
-        public void TestInterviewSecondTask()
-        {
-            string s = _secondTask.Solution("acb");
-            Assert.AreEqual("ab", s);
-
-            s = _secondTask.Solution("hot");
-            Assert.AreEqual("ho", s);
-
-            s = _secondTask.Solution("codility");
-            Assert.AreEqual("cdility", s);
-
-            s = _secondTask.Solution("aaaa");
-            Assert.AreEqual("aaa", s);
-
-            s = _secondTask.Solution("cadility");
-            Assert.AreEqual("adility", s);
-
-            s = _secondTask.Solution("ccdility");
-            Assert.AreEqual("ccdiity", s);
-
-            s = _secondTask.Solution("aa");
-            Assert.AreEqual("a", s);
-        }
-
-        [Test]
-        public void TestInterviewThirdTask()
-        {
-            int s = _thirdTask.Solution(955);
-            Assert.AreEqual(4, s);
-
-            s = _thirdTask.Solution(8);
-            Assert.AreEqual(-1, s);
         }
     }
 }

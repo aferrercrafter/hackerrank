@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\codility\codility.csproj" />
+    <ProjectReference Include="..\interviews\interviews.csproj" />
   </ItemGroup>
 
 </Project>
