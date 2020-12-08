@@ -5,6 +5,12 @@ namespace codewars.kyu_5
 {
     public class DotsBoxValidator
     {
+        /// <summary>
+        /// Problem solution from
+        /// https://www.codewars.com/kata/5d81d8571c6411001a40ba66/train/csharp
+        /// </summary>
+        /// <param name="r"></param>
+        /// <returns></returns>
         public static int[] DotsAndBoxes(int[][] r)
         {
             int n = (int)Math.Round(Math.Sqrt(r.Max(x => x.Max()) + 1));
