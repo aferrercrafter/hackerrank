@@ -11,7 +11,7 @@ namespace codewars.kyu_5
         /// </summary>
         /// <param name="r"></param>
         /// <returns></returns>
-        public static int[] DotsAndBoxes(int[][] r)
+        public int[] DotsAndBoxes(int[][] r)
         {
             int n = (int)Math.Round(Math.Sqrt(r.Max(x => x.Max()) + 1));
             int[,] boxes = new int[n + 1, n + 1];
